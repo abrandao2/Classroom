@@ -70,12 +70,12 @@ using LiubaSys.Models;
             WriteLiteral("\r\n<div class=\"card grey lighten-5\">\r\n    ");
             EndContext();
             BeginContext(73, 1024, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1ba89f77500d4ca0bd63acd78a53b0e3", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a6079194e88242608c12815a2e8f3cd3", async() => {
                 BeginContext(181, 156, true);
                 WriteLiteral("\r\n        <div class=\"row\">\r\n            <div class=\"input-field col s12\">\r\n                <i class=\"material-icons prefix\">mode_edit</i>\r\n                ");
                 EndContext();
                 BeginContext(337, 81, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("textarea", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "212d3edbeddb4bdc8d2655f7bc77fd2c", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("textarea", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e53eda3947854444a5abb514d9ee17a9", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_TextAreaTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.TextAreaTagHelper>();
@@ -100,7 +100,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_TextAreaTagHelper.For = ModelExpressionPro
                 WriteLiteral("\r\n                <label for=\"message\">Write a message...</label>\r\n                <div class=\"row\"></div>\r\n                <div id=\"actionsBar\" style=\"display: none\">\r\n                    ");
                 EndContext();
                 BeginContext(607, 104, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "792518f942934f23847f08d336021db3", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "085ec3b081384aeea0d06fb55985f5c2", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper>();

@@ -9,6 +9,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace LiubaSys.Controllers
 {
+    // Currently working on this in order to render certain features according 
+    // to the user's role.
     [Authorize]
     public class AdministrationController : Controller
     {

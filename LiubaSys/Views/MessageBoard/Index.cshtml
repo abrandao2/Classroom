@@ -3,18 +3,16 @@
     ViewData["Title"] = "Message Board";
 }
 
-<nav class="teal lighten-2 center" style="font-size: 200%">
-    @ViewData["Title"]
-</nav>
-
+<!-- Load partial view for posting a message on the MessageBoard -->
 @await Html.PartialAsync("~/Views/MessageBoard/_PublishMessage.cshtml", new LiubaSys.ViewModels.PublishMessageViewModel())
 
-@foreach (var row in Model)
+<!-- Load all current messages in the database, NEWEST FIRST -->
+@foreach (var row in Model.Reverse())
 {
     <div>
         <div class="card grey lighten-3">
             <div class="card-content dark-text">
-                <span class="card-title">@row.DatePublished</span>
+                <span class="card-title">@String.Format("{0:dd/MM/yy HH:mm}", row.DatePublished)</span>
                 <p>@row.Content</p><br />
                 @if (row.File1 != null)
                 {
@@ -28,12 +26,13 @@
     </div>
 }
 
+<!-- Load specific scripts for this page -->
 @section scripts
 {
     <script>
         // Load the buttons bar under the message box onclick()
         // The messagebox comes from the partial view "_PublishMessage.cshtml"
-        $('#message').click(function() {
+        $('#message').click(function () {
             $('#actionsBar').slideToggle("slow");
         });
 

@@ -21,7 +21,7 @@ namespace LiubaSys.Controllers
             this.signInManager = signInManager;
         }
 
-
+        // GET and POST actions for registering new users
         [HttpGet]
         public IActionResult Register()
         {
@@ -60,6 +60,7 @@ namespace LiubaSys.Controllers
             return View(model);
         }
 
+        // Log user out
         [HttpPost]
         public async Task<IActionResult> Logout()
         {
@@ -68,6 +69,7 @@ namespace LiubaSys.Controllers
             return RedirectToAction("Login");
         }
 
+        // GET and POST actions for logging the user in
         [HttpGet]
         public IActionResult Login()
         {

@@ -4,14 +4,16 @@ using LiubaSys.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace LiubaSys.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20191118161024_Update_MessagePublishedTable_AddClassroom")]
+    partial class Update_MessagePublishedTable_AddClassroom
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -99,6 +101,8 @@ namespace LiubaSys.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<int>("Classroom");
+
                     b.Property<string>("Content");
 
                     b.Property<DateTime>("DatePublished");
@@ -106,8 +110,6 @@ namespace LiubaSys.Migrations
                     b.Property<string>("File1");
 
                     b.Property<string>("UserEmail");
-
-                    b.Property<int>("Year");
 
                     b.Property<string>("YoutubeLink1");
 

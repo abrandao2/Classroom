@@ -12,9 +12,7 @@ namespace LiubaSys.Models
         public DateTime DatePublished { get; set; }
         public string File1 { get; set; }
         public string YoutubeLink1 { get; set; }
-
-        // Navigational properties
-        public ApplicationUser User { get; set; }
-        public virtual ICollection<MessagesInClassroom> MessagesInClassroom { get; set; }
+        public string UserEmail { get; set; }
+        public int Year { get; set; }
     }
 }

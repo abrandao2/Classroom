@@ -28,14 +28,28 @@ namespace LiubaSys.Controllers
             this.hostingEnvironment = hostingEnvironment;
         }
 
+        // Get current user for registration purposes
         private Task<ApplicationUser> GetCurrentUserAsync() =>
             userManager.GetUserAsync(HttpContext.User);
 
-        public IActionResult Index()
+        // Show all the messages stored
+        public async Task<IActionResult> Index()
         {
-            return View(database.MessagesPublished);
+            var currentUser = await GetCurrentUserAsync();
+            /*
+            IEnumerable<MessagePublished> messages = from message in database.MessagesPublished
+                                                     where message.User == currentUser
+                                                     select message;
+                                                     */
+
+            IEnumerable<MessagePublished> messages = from message in database.MessagesPublished
+                                                     where message.Year == currentUser.Year
+                                                     select message;
+
+            return View(messages);
         }
 
+        // GET and POST actions for sending a private message to the teacher
         [HttpGet]
         public IActionResult SendMessage()
         {
@@ -70,6 +84,7 @@ namespace LiubaSys.Controllers
             return View(model);
         }
 
+        // GET and POST methods for posting messages on the MessageBoard
         [HttpGet]
         public IActionResult PublishMessage()
         {
@@ -99,7 +114,8 @@ namespace LiubaSys.Controllers
                     DatePublished = DateTime.Now,
                     YoutubeLink1 = model.YoutubeLink1,
                     File1 = uniqueFileName,
-                    User = currentUser
+                    UserEmail = currentUser.Email,
+                    Year = currentUser.Year
                 };
 
                 database.Add(message);
