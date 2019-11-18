@@ -8,7 +8,6 @@ namespace LiubaSys.Models
     public class MessagePublished
     {
         public int MessagePublishedId { get; set; }
-        public string Subject { get; set; }
         public string Content { get; set; }
         public DateTime DatePublished { get; set; }
         public string File1 { get; set; }

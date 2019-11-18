@@ -7,15 +7,14 @@
     @ViewData["Title"]
 </nav>
 
+@await Html.PartialAsync("~/Views/MessageBoard/_PublishMessage.cshtml", new LiubaSys.ViewModels.PublishMessageViewModel())
+
 @foreach (var row in Model)
 {
     <div>
         <div class="card grey lighten-3">
             <div class="card-content dark-text">
-                <span class="card-title">@row.Subject</span>
-                <div class="row">
-                    <span class="new badge" data-badge-caption="@row.DatePublished"></span>
-                </div>
+                <span class="card-title">@row.DatePublished</span>
                 <p>@row.Content</p><br />
                 @if (row.File1 != null)
                 {
@@ -27,4 +26,28 @@
             </div>
         </div>
     </div>
+}
+
+@section scripts
+{
+    <script>
+        // Load the buttons bar under the message box onclick()
+        // The messagebox comes from the partial view "_PublishMessage.cshtml"
+        $('#message').click(function() {
+            $('#actionsBar').slideToggle("slow");
+        });
+
+        // Load thumbnail of loaded file
+        document.getElementById("files").onchange = function () {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                // Get loaded data and render thumbnail
+                document.getElementById("image").src = e.target.result;
+            };
+
+            // Read the image file as a data URL
+            reader.readAsDataURL(this.files[0]);
+        }
+    </script>
 }

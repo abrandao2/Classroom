@@ -1,4 +1,9 @@
-﻿@model PublishMessageViewModel
+﻿<!-- DEPRECATED -->
+<!-- DEPRECATED -->
+<!-- DEPRECATED -->
+
+
+@model PublishMessageViewModel
 @{
     ViewData["Title"] = "Publish a Message";
 }
@@ -12,13 +17,6 @@
         <div class="row"></div>
         <div class="row">
             <form enctype="multipart/form-data" asp-action="PublishMessage" asp-controller="MessageBoard" method="post">
-                <div class="row">
-                    <div class="input-field">
-                        <input asp-for="Subject" id="subject" type="text" class="validate" />
-                        <label asp-for="Subject" for="subject">Subject</label>
-                        <span asp-validation-for="Subject"></span>
-                    </div>
-                </div>
                 <div class="row">
                     <div class="input-field">
                         <textarea asp-for="Content" id="content" class="materialize-textarea" rows="10"></textarea>

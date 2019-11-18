@@ -81,23 +81,22 @@ namespace LiubaSys.Controllers
         {
             if (ModelState.IsValid)
             {
-                string uniqueFileName = null;
+                string filePath = null;
 
                 if (model.File1 != null)
                 {
                     string uploadsFolder = Path.Combine(hostingEnvironment.WebRootPath, "Files");
-                    uniqueFileName = Guid.NewGuid().ToString() + "_" + model.File1.FileName;
-                    string filePath = Path.Combine(uploadsFolder, uniqueFileName);
+                    string uniqueFileName = Guid.NewGuid().ToString() + "_" + model.File1.FileName;
+                    filePath = Path.Combine(uploadsFolder, uniqueFileName);
                     model.File1.CopyTo(new FileStream(filePath, FileMode.Create));
                 }
 
                 MessagePublished message = new MessagePublished
                 {
-                    Subject = model.Subject,
                     Content = model.Content,
                     DatePublished = DateTime.Now,
                     YoutubeLink1 = model.YoutubeLink1,
-                    File1 = uniqueFileName
+                    File1 = filePath
                 };
 
                 database.Add(message);

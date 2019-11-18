@@ -17,8 +17,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 <body>
-
-    <nav class="teal darken-2 z-depth-2">
+    <!-- Navbar -->
+    <nav class="nav-extended teal darken-2 z-depth-2">
         <div class="nav-wrapper">
             <a asp-action="Index" asp-controller="MessageBoard" class="brand-logo center" style="margin-left: 15px;">Liuba's Classroom</a>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
@@ -28,7 +28,7 @@
                     <li>
                         <a asp-action="SendMessage" asp-controller="MessageBoard">
                             <i class="material-icons right">message</i>
-                            Send Message
+                            Talk to Liuba
                         </a>
                     </li>
                     <li>
@@ -52,6 +52,7 @@
         </div>
     </nav>
 
+    <!-- Some buttons only visible when user logged in -->
     <ul class="sidenav" id="mobile-demo">
         @if (signInManager.IsSignedIn(User))
         {
@@ -71,6 +72,7 @@
 
     @RenderBody()
 
+    <!-- Footer -->
     <footer class="page-footer teal darken-1">
         <div class="footer-copyright">
             <div class="container">
@@ -80,9 +82,11 @@
         </div>
     </footer>
 
+    <!-- Scripts for ASP.NET Core Form validation-->
     <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.16.0/jquery.validate.min.js"></script>
     <script src="https://ajax.aspnetcdn.com/ajax/jquery.validation.unobtrusive/3.2.6/jquery.validate.unobtrusive.min.js"></script>
 
+    <!-- Scripts for MaterializeCSS-->
     <script>
         $(document).ready(function () {
             $('.sidenav').sidenav();
@@ -90,6 +94,9 @@
         $(document).ready(function () {
             $('select').formSelect();
         });
+        $('#message').val('');
+        M.textareaAutoResize($('#message'));
     </script>
+    @RenderSection("scripts", required: false)
 </body>
 </html>
