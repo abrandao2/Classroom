@@ -1,6 +1,7 @@
 ﻿@model IEnumerable<MessagePublished>
 @{
-    ViewData["Title"] = "Message Board";
+    int year = Model.Select(x => x.Year).First();
+    ViewData["Title"] = $"Message Board - Year {year}";
 }
 
 <!-- Load partial view for posting a message on the MessageBoard -->
