@@ -77,17 +77,19 @@ namespace LiubaSys.Controllers
         }
 
         [HttpPost]
-        public IActionResult PublishMessage(PublishMessageViewModel model)
+        public async Task<IActionResult> PublishMessage(PublishMessageViewModel model)
         {
+            var currentUser = await GetCurrentUserAsync();
+
             if (ModelState.IsValid)
             {
-                string filePath = null;
+                string uniqueFileName = null;
 
                 if (model.File1 != null)
                 {
                     string uploadsFolder = Path.Combine(hostingEnvironment.WebRootPath, "Files");
-                    string uniqueFileName = Guid.NewGuid().ToString() + "_" + model.File1.FileName;
-                    filePath = Path.Combine(uploadsFolder, uniqueFileName);
+                    uniqueFileName = Guid.NewGuid().ToString() + "_" + model.File1.FileName;
+                    string filePath = Path.Combine(uploadsFolder, uniqueFileName);
                     model.File1.CopyTo(new FileStream(filePath, FileMode.Create));
                 }
 
@@ -96,7 +98,8 @@ namespace LiubaSys.Controllers
                     Content = model.Content,
                     DatePublished = DateTime.Now,
                     YoutubeLink1 = model.YoutubeLink1,
-                    File1 = filePath
+                    File1 = uniqueFileName,
+                    User = currentUser
                 };
 
                 database.Add(message);

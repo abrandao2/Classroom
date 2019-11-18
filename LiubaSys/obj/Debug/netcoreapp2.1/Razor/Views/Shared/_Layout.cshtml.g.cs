@@ -80,7 +80,7 @@ using LiubaSys.Models;
             WriteLiteral("\r\n<!DOCTYPE html>\r\n<html lang=\"en\">\r\n");
             EndContext();
             BeginContext(143, 866, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dc714f97afa54ea1998a6e205a6fe790", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2de737e6ccf743f19e18f38d34836d04", async() => {
                 BeginContext(149, 523, true);
                 WriteLiteral(@"
     <title>Materialize Test</title>
@@ -93,7 +93,7 @@ using LiubaSys.Models;
     ");
                 EndContext();
                 BeginContext(672, 48, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "ac978bdcae244de493b1b43a95d1a936", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "b0ede1233af74feebb551e70e2d2e0dd", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -131,12 +131,12 @@ using LiubaSys.Models;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(1011, 3323, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3970c7faa159481c88e4464778823197", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1173f3295bb84cdebd464221f99e207e", async() => {
                 BeginContext(1017, 126, true);
                 WriteLiteral("\r\n    <!-- Navbar -->\r\n    <nav class=\"nav-extended teal darken-2 z-depth-2\">\r\n        <div class=\"nav-wrapper\">\r\n            ");
                 EndContext();
                 BeginContext(1143, 126, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d7d456bd413c434ab3b305f0b62e240d", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "aa117e8714a94c0bb5111869066d7dba", async() => {
                     BeginContext(1248, 17, true);
                     WriteLiteral("Liuba\'s Classroom");
                     EndContext();
@@ -171,7 +171,7 @@ using LiubaSys.Models;
                 WriteLiteral("                    <li>\r\n                        ");
                 EndContext();
                 BeginContext(1561, 204, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "18bb4508aa174d5a9d8a822b2da5bfae", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "938879f7481c468c875d3b4858524e41", async() => {
                     BeginContext(1619, 142, true);
                     WriteLiteral("\r\n                            <i class=\"material-icons right\">message</i>\r\n                            Talk to Liuba\r\n                        ");
                     EndContext();
@@ -195,7 +195,7 @@ using LiubaSys.Models;
                 WriteLiteral("\r\n                    </li>\r\n                    <li>\r\n                        ");
                 EndContext();
                 BeginContext(1844, 289, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ab5a3583003344bbbab4950b96f056bf", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "429efd2168104d0fbcd826e4ab196605", async() => {
                     BeginContext(1909, 130, true);
                     WriteLiteral("\r\n                            <button type=\"submit\" class=\"waves-effect waves-light btn\">\r\n                                Logout ");
                     EndContext();
@@ -236,7 +236,7 @@ using LiubaSys.Models;
                 WriteLiteral("                    <li>\r\n                        ");
                 EndContext();
                 BeginContext(2272, 79, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f7f772906445472bb8569685a2acb395", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "40cc03fed6b44ce09003759039069d04", async() => {
                     BeginContext(2339, 8, true);
                     WriteLiteral("Register");
                     EndContext();
@@ -261,7 +261,7 @@ using LiubaSys.Models;
                 WriteLiteral("\r\n                    </li>\r\n                    <li>\r\n                        ");
                 EndContext();
                 BeginContext(2430, 73, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c6e82417378549f4b58c1cdb01d21fa6", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e2f5b3f84bca477db256e388a006cb6d", async() => {
                     BeginContext(2494, 5, true);
                     WriteLiteral("Login");
                     EndContext();
@@ -303,7 +303,7 @@ using LiubaSys.Models;
                 WriteLiteral("            <li>");
                 EndContext();
                 BeginContext(2776, 62, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1713e4d108594783ab8ab2ad2d5d971b", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a6f84261eec343b598e1e05ca5115f7e", async() => {
                     BeginContext(2822, 12, true);
                     WriteLiteral("Send Message");
                     EndContext();
@@ -327,7 +327,7 @@ using LiubaSys.Models;
                 WriteLiteral("</li>\r\n            ");
                 EndContext();
                 BeginContext(2857, 218, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b9ce829d54e94a558e9c155b5e4c38f1", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c526b01a68c24623a2934cc4569ee2b7", async() => {
                     BeginContext(2922, 146, true);
                     WriteLiteral("\r\n                <button type=\"submit\" class=\"waves-effect waves-light btn\">\r\n                    Logout\r\n                </button>\r\n            ");
                     EndContext();
@@ -365,7 +365,7 @@ using LiubaSys.Models;
                 WriteLiteral("            <li>");
                 EndContext();
                 BeginContext(3129, 56, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3eda53e2ec0c42d4a6e6890e53e1e421", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e01533dcc27742ff9a419cf74a16c668", async() => {
                     BeginContext(3176, 5, true);
                     WriteLiteral("Login");
                     EndContext();
@@ -389,7 +389,7 @@ using LiubaSys.Models;
                 WriteLiteral("</li>\r\n            <li>");
                 EndContext();
                 BeginContext(3208, 62, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ad81b61149754d35ac9d12efc1dea02c", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9c4fee44b9e8444e87c67cdf4cea369d", async() => {
                     BeginContext(3258, 8, true);
                     WriteLiteral("Register");
                     EndContext();

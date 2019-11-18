@@ -4,14 +4,16 @@ using LiubaSys.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace LiubaSys.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20191118150248_Remove_MessagePublishedSubject")]
+    partial class Remove_MessagePublishedSubject
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -105,13 +107,25 @@ namespace LiubaSys.Migrations
 
                     b.Property<string>("File1");
 
-                    b.Property<string>("UserId");
+                    b.Property<string>("File2");
+
+                    b.Property<string>("File3");
+
+                    b.Property<string>("File4");
+
+                    b.Property<string>("File5");
 
                     b.Property<string>("YoutubeLink1");
 
-                    b.HasKey("MessagePublishedId");
+                    b.Property<string>("YoutubeLink2");
 
-                    b.HasIndex("UserId");
+                    b.Property<string>("YoutubeLink3");
+
+                    b.Property<string>("YoutubeLink4");
+
+                    b.Property<string>("YoutubeLink5");
+
+                    b.HasKey("MessagePublishedId");
 
                     b.ToTable("MessagesPublished");
                 });
@@ -265,13 +279,6 @@ namespace LiubaSys.Migrations
                     b.HasOne("LiubaSys.Models.Classroom")
                         .WithMany("Students")
                         .HasForeignKey("ClassroomId");
-                });
-
-            modelBuilder.Entity("LiubaSys.Models.MessagePublished", b =>
-                {
-                    b.HasOne("LiubaSys.Models.ApplicationUser", "User")
-                        .WithMany()
-                        .HasForeignKey("UserId");
                 });
 
             modelBuilder.Entity("LiubaSys.Models.MessageSent", b =>

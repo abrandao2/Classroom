@@ -11,17 +11,10 @@ namespace LiubaSys.Models
         public string Content { get; set; }
         public DateTime DatePublished { get; set; }
         public string File1 { get; set; }
-        public string File2 { get; set; }
-        public string File3 { get; set; }
-        public string File4 { get; set; }
-        public string File5 { get; set; }
         public string YoutubeLink1 { get; set; }
-        public string YoutubeLink2 { get; set; }
-        public string YoutubeLink3 { get; set; }
-        public string YoutubeLink4 { get; set; }
-        public string YoutubeLink5 { get; set; }
 
         // Navigational properties
+        public ApplicationUser User { get; set; }
         public virtual ICollection<MessagesInClassroom> MessagesInClassroom { get; set; }
     }
 }
