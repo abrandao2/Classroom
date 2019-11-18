@@ -1,0 +1,67 @@
+﻿@model RegisterViewModel
+@{
+    ViewData["Title"] = "Register";
+}
+
+<nav class="teal lighten-2 center" style="font-size: 200%">
+    @ViewData["Title"]
+</nav>
+
+<div class="card grey lighten-3">
+    <div class="container">
+        <div class="row"></div>
+        <div class="row">
+            <form method="post" class="col s12">
+                <div asp-validation-summary="All"></div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input asp-for="Email"  id="email" type="text" class="validate">
+                        <label asp-for="Email" for="email">Email</label>
+                        <span asp-validation-for="Email"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input asp-for="Password" id="password" type="password" class="validate">
+                        <label asp-for="Password" for="password">Password</label>
+                        <span asp-validation-for="Password"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input asp-for="ConfirmPassword" id="confirmpassword" type="password" class="validate">
+                        <label asp-for="ConfirmPassword" for="confirmpassword">Repeat Password</label>
+                        <span asp-validation-for="ConfirmPassword"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <select asp-for="Year">
+                            <option disabled selected>Choose your option</option>
+                            <option value="2">Year 2</option>
+                            <option value="3">Year 3</option>
+                            <option value="4">Year 4</option>
+                        </select>
+                        <label asp-for="Year"></label>
+                        <span asp-validation-for="Year"></span>
+                    </div>
+                    <div class="input-field col s6">
+                        <select asp-for="Language">
+                            <option disabled selected>Choose your option</option>
+                            <option value="German">German</option>
+                            <option value="English">English</option>
+                        </select>
+                        <label asp-for="Language"></label>
+                        <span asp-validation-for="Language"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12">
+                        <button type="submit" class="waves-effect waves-light btn right">Register</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="row"></div>
+    </div>
+</div>

@@ -1,0 +1,18 @@
+﻿@media only screen and (max-width: 600px) {
+    nav .brand-logo {
+        font-size: 20px;
+        white-space: nowrap;
+    }
+}
+
+body {
+    margin: 0 5vw 0 5vw;
+}
+
+.brand-logo {
+    font-family: 'Pacifico', cursive;
+}
+
+h5 {
+    padding: 0;
+}

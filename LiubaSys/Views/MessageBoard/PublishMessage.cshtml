@@ -1,0 +1,53 @@
+﻿@model PublishMessageViewModel
+@{
+    ViewData["Title"] = "Publish a Message";
+}
+
+<nav class="teal lighten-2 center" style="font-size: 200%">
+    @ViewData["Title"]
+</nav>
+
+<div class="card grey lighten-3">
+    <div class="container">
+        <div class="row"></div>
+        <div class="row">
+            <form enctype="multipart/form-data" asp-action="PublishMessage" asp-controller="MessageBoard" method="post">
+                <div class="row">
+                    <div class="input-field">
+                        <input asp-for="Subject" id="subject" type="text" class="validate" />
+                        <label asp-for="Subject" for="subject">Subject</label>
+                        <span asp-validation-for="Subject"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field">
+                        <textarea asp-for="Content" id="content" class="materialize-textarea" rows="10"></textarea>
+                        <label asp-for="Content" for="content">Content</label>
+                        <span asp-validation-for="Content"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field">
+                        <input asp-for="YoutubeLink1" id="youtubelink1" type="text" class="validate" />
+                        <label asp-for="YoutubeLink1" for="youtubelink1">Youtube Link</label>
+                        <span asp-validation-for="YoutubeLink1"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field file-field">
+                        <div class="btn">
+                            <span>File</span>
+                            <input asp-for="File1" type="file" />
+                        </div>
+                        <div class="file-path-wrapper">
+                            <input class="file-path validate" type="text" />
+                        </div>
+                        <span asp-validation-for="File1"></span>
+                    </div>
+                </div>
+                <button type="submit" class="waves-effect waves-light btn right">Send</button>
+            </form>
+        </div>
+        <div class="row"></div>
+    </div>
+</div>

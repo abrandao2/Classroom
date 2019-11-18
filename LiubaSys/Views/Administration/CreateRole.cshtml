@@ -1,0 +1,29 @@
+﻿@model CreateRoleViewModel
+@{
+    ViewData["Title"] = "Create New Role";
+}
+
+<nav class="teal lighten-2 center" style="font-size: 200%">
+    @ViewData["Title"]
+</nav>
+
+<div class="card grey lighten-3">
+    <div class="container">
+        <div class="row"></div>
+        <div class="row">
+            <form method="post" class="col s12">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input asp-for="RoleName" id="rolename" type="text" class="validate">
+                        <label asp-for="RoleName" for="rolename">Role Name</label>
+                        <span asp-validation-for="RoleName"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <button type="submit" class="waves-effect waves-light btn right">Create Role</button>
+                </div>
+            </form>
+        </div>
+        <div class="row"></div>
+    </div>
+</div>

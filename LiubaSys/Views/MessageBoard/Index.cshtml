@@ -1,0 +1,30 @@
+﻿@model IEnumerable<MessagePublished>
+@{
+    ViewData["Title"] = "Message Board";
+}
+
+<nav class="teal lighten-2 center" style="font-size: 200%">
+    @ViewData["Title"]
+</nav>
+
+@foreach (var row in Model)
+{
+    <div>
+        <div class="card grey lighten-3">
+            <div class="card-content dark-text">
+                <span class="card-title">@row.Subject</span>
+                <div class="row">
+                    <span class="new badge" data-badge-caption="@row.DatePublished"></span>
+                </div>
+                <p>@row.Content</p><br />
+                @if (row.File1 != null)
+                {
+                    <a href="@row.File1">@row.File1</a>
+                }
+            </div>
+            <div class="card-action">
+                <a class="waves-effect waves-light btn">Reply</a>
+            </div>
+        </div>
+    </div>
+}
