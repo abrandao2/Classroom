@@ -68,7 +68,8 @@ namespace LiubaSys.Controllers
                     Subject = model.Subject,
                     Content = model.Content,
                     DateSent = DateTime.Now,
-                    Student = currentUser
+                    UserEmail = currentUser.Email,
+                    Year = currentUser.Year
                 };
 
                 database.Add(message);
@@ -129,6 +130,11 @@ namespace LiubaSys.Controllers
             }
 
             return View(model);
+        }
+
+        public IActionResult AddFile()
+        {
+            return PartialView();
         }
     }
 }

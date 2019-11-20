@@ -11,8 +11,7 @@ namespace LiubaSys.Models
         public string Subject { get; set; }
         public string Content { get; set; }
         public DateTime DateSent { get; set; }
-
-        // Navigational property
-        public ApplicationUser Student { get; set; }
+        public string UserEmail { get; set; }
+        public int Year { get; set; }
     }
 }

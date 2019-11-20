@@ -32,3 +32,4 @@ C:\Users\dev01766\source\repos\LiubaSys\LiubaSys\obj\Debug\netcoreapp2.1\Razor\V
 C:\Users\dev01766\source\repos\LiubaSys\LiubaSys\obj\Debug\netcoreapp2.1\Razor\Views\Administration\CreateRole.cshtml.g.cs
 C:\Users\dev01766\source\repos\LiubaSys\LiubaSys\obj\Debug\netcoreapp2.1\Razor\Views\MessageBoard\PublishMessage.cshtml.g.cs
 C:\Users\dev01766\source\repos\LiubaSys\LiubaSys\obj\Debug\netcoreapp2.1\Razor\Views\MessageBoard\_PublishMessage.cshtml.g.cs
+C:\Users\dev01766\source\repos\LiubaSys\LiubaSys\obj\Debug\netcoreapp2.1\Razor\Views\MessageBoard\_AddFile.cshtml.g.cs

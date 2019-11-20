@@ -1,0 +1,5 @@
+Layout
+- defines the appearence of the app's interface. XML files.
+
+Activity
+- it's a Java class. Clearly defines the operations, which the user can perform.

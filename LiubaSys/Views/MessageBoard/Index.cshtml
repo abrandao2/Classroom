@@ -34,7 +34,12 @@
         // Load the buttons bar under the message box onclick()
         // The messagebox comes from the partial view "_PublishMessage.cshtml"
         $('#message').click(function () {
-            $('#actionsBar').slideToggle("slow");
+            $('#actions-bar').slideToggle("slow");
+            $('#actions-bar').attr("id", "#actions-bar-active");
+        });
+
+        $('#empty-file-input').click(function () {
+            $('#files').val('');
         });
 
         // Load thumbnail of loaded file
