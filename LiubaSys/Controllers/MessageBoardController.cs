@@ -132,9 +132,9 @@ namespace LiubaSys.Controllers
             return View(model);
         }
 
-        public IActionResult AddFile()
+        public ActionResult AddFile()
         {
-            return PartialView();
+            return PartialView("~/Views/MessageBoard/_AddFile.cshtml");
         }
     }
 }

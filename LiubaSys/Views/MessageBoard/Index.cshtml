@@ -42,6 +42,16 @@
             $('#files').val('');
         });
 
+        $('#add-file-1, #add-file-2, #add-file-3, #add-file-4').hide();
+        var id = 1;
+        $('.light-green').click(function () {
+            if (id < 5) {
+                $('#add-file-' + id).show();
+                id++;
+                console.log(id);
+            }
+        });
+
         // Load thumbnail of loaded file
         document.getElementById("files").onchange = function () {
             var reader = new FileReader();

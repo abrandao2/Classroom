@@ -9,7 +9,12 @@
                 <label for="message">Write a message...</label>
                 <div class="row"></div>
                 <div id="actions-bar" style="display: none">
-                    @await Html.PartialAsync("~/Views/MessageBoard/_AddFile.cshtml", new LiubaSys.ViewModels.PublishMessageViewModel())
+                    @for (int i = 0; i < 5; i++)
+                    {
+                        <span class="row" id="add-file-@i">
+                            @await Html.PartialAsync("~/Views/MessageBoard/_AddFile.cshtml", new LiubaSys.ViewModels.PublishMessageViewModel())
+                        </span>
+                    }
                 </div>
                 <div class="row"></div>
                 <div>
