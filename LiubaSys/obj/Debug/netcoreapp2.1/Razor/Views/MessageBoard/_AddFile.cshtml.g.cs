@@ -61,7 +61,7 @@ using LiubaSys.Models;
             WriteLiteral("\r\n\r\n    <div class=\"actions\">\r\n        ");
             EndContext();
             BeginContext(71, 104, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "af277dc307f44ffd91a88f0e37ed9043", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "9cfdee4003a44e768f79554e8a691f2b", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper>();

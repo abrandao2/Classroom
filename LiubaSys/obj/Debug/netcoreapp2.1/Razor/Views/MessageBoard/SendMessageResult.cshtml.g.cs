@@ -87,7 +87,7 @@ using LiubaSys.Models;
             WriteLiteral("</p>\r\n        </div>\r\n        <div class=\"card-action\">\r\n            ");
             EndContext();
             BeginContext(348, 99, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a9dc0a408ad54db4b485d6446547825c", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a7f2b50329724cebbe2f6a2205af4dfc", async() => {
                 BeginContext(437, 6, true);
                 WriteLiteral("Return");
                 EndContext();

@@ -66,12 +66,12 @@ using LiubaSys.Models;
             WriteLiteral("\r\n<div class=\"card grey lighten-5\">\r\n    ");
             EndContext();
             BeginContext(73, 1093, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "45faba23882a40ce98ab45532a6e2ca1", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "98e62603ee9545e48cf89a9afc28e09a", async() => {
                 BeginContext(181, 175, true);
                 WriteLiteral("\r\n        <div class=\"row\">\r\n            <div id=\"input-message\" class=\"input-field col s12\">\r\n                <i class=\"material-icons prefix\">mode_edit</i>\r\n                ");
                 EndContext();
                 BeginContext(356, 81, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("textarea", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "99607e01c95947708fc074b1a71bd576", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("textarea", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a77726fa2d39407fa5825c9d83e6c2a9", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_TextAreaTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.TextAreaTagHelper>();

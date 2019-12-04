@@ -1,4 +1,5 @@
 ﻿@model IEnumerable<MessagePublished>
+@using System.Text.RegularExpressions;
 @{
     int year = Model.Select(x => x.Year).First();
     ViewData["Title"] = $"Message Board - Year {year}";
@@ -17,7 +18,10 @@
                 <p>@row.Content</p><br />
                 @if (row.File1 != null)
                 {
-                    <a href="~/Files/@row.File1" download>@row.File1</a>
+                    Regex regex = new Regex(@"(?=_).*");
+                    Match match = regex.Match(row.File1.ToString());
+                    string fileName = match.ToString().Remove(0, 1);
+                    <a href="~/Files/@row.File1" download>@fileName</a>
                 }
             </div>
             <div class="card-action">
