@@ -5,10 +5,8 @@
     ViewData["Title"] = $"Message Board - Year {year}";
 }
 
-<!-- Load partial view for posting a message on the MessageBoard -->
 @await Html.PartialAsync("~/Views/MessageBoard/_PublishMessage.cshtml", new LiubaSys.ViewModels.PublishMessageViewModel())
 
-<!-- Load all current messages in the database, NEWEST FIRST -->
 @foreach (var row in Model.Reverse())
 {
     <div>
@@ -31,12 +29,9 @@
     </div>
 }
 
-<!-- Load specific scripts for this page -->
 @section scripts
 {
     <script>
-        // Load the buttons bar under the message box onclick()
-        // The messagebox comes from the partial view "_PublishMessage.cshtml"
         $('#message').click(function () {
             $('#actions-bar').slideToggle("slow");
             $('#actions-bar').attr("id", "#actions-bar-active");
@@ -56,16 +51,13 @@
             }
         });
 
-        // Load thumbnail of loaded file
         document.getElementById("files").onchange = function () {
             var reader = new FileReader();
 
             reader.onload = function (e) {
-                // Get loaded data and render thumbnail
                 document.getElementById("image").src = e.target.result;
             };
 
-            // Read the image file as a data URL
             reader.readAsDataURL(this.files[0]);
         }
     </script>
