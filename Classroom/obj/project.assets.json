@@ -12542,9 +12542,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dev01766\\source\\repos\\LiubaSys\\LiubaSys\\LiubaSys.csproj",
-      "projectName": "LiubaSys",
-      "projectPath": "C:\\Users\\dev01766\\source\\repos\\LiubaSys\\LiubaSys\\LiubaSys.csproj",
+      "projectUniqueName": "C:\\Users\\dev01766\\source\\repos\\LiubaSys\\LiubaSys\\Classroom.csproj",
+      "projectName": "Classroom",
+      "projectPath": "C:\\Users\\dev01766\\source\\repos\\LiubaSys\\LiubaSys\\Classroom.csproj",
       "packagesPath": "C:\\Users\\dev01766\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\dev01766\\source\\repos\\LiubaSys\\LiubaSys\\obj\\",
       "projectStyle": "PackageReference",
